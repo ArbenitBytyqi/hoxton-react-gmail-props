@@ -1,8 +1,7 @@
-
 export function Starred({
     currentTab,
     setCurrentTab,
-    starredEmails
+    starredEmails,
 }) {
     return (
         <li

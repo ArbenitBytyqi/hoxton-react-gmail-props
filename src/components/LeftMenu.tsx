@@ -1,3 +1,4 @@
+import { HideRead } from "./HideRead";
 import { Inbox } from "./Inbox";
 import { Starred } from "./Starred";
 
@@ -24,15 +25,11 @@ export function LeftMenu({
                     starredEmails={starredEmails}
                 />
 
-                <li className="item toggle">
-                    <label htmlFor="hide-read">Hide read</label>
-                    <input
-                        id="hide-read"
-                        type="checkbox"
-                        checked={hideRead}
-                        onChange={e => setHideRead(e.target.checked)}
-                    />
-                </li>
+                <HideRead
+                    hideRead={hideRead}
+                    setHideRead={setHideRead}
+                />
+
             </ul>
         </nav>
     )

@@ -1,8 +1,7 @@
-export function Inbox(
+export function Inbox({
     currentTab,
     setCurrentTab,
-    unreadEmails
-) {
+    unreadEmails }) {
     return (
         <li
             className={`item ${currentTab === 'inbox' ? 'active' : ''}`}
